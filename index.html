@@ -217,9 +217,9 @@
 
     form.addEventListener('submit', e => {
         e.preventDefault()
-        alert("Please wait for confirmation");
+        alert("Pres OK to submit your query!");
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => alert("Thank you for waiting! Contact form is now submitted"))
+            .then(response => alert("Thank you for contacting!"))
             .catch(error => console.error('Error!', error.message))
     })
 </script>
